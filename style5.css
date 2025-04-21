@@ -1,0 +1,1654 @@
+/* Reset y base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.top-bar {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  font-size: 0.9rem;
+  padding: 0.5rem 2rem; /* Ajusta el padding horizontal según necesites */
+}
+
+.contact-info {
+  display: flex;
+  gap: 2rem; /* Espacio entre los elementos de contacto */
+  align-items: center;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  max-width: 1200px; /* Limita el ancho del contenedor */
+  margin: 0 auto; /* Centra el contenedor si es más pequeño que el ancho de la pantalla */
+}
+
+.contact-info a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #ff3d00; /* Color naranja al pasar el ratón */
+}
+
+.contact-info i {
+  font-size: 1rem;
+}
+
+/* Barra superior */
+.top-bar {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.contact-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+  }
+  
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end; 
+    padding-left: 0;
+    margin: 0;
+    margin-right: 1.6rem; /* Espacio desde el borde derecho */
+  }
+  
+  .nav-links li {
+    position: relative; /* Necesario para posicionar el submenu */
+  }
+  nav {
+    flex: 1; /* permite que el nav crezca y ocupe espacio */
+  }
+
+.nav-links li {
+  position: relative; /* Necesario para posicionar el submenu */
+}
+
+/* Estilo del submenu */
+.menu-item {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* Justo debajo del enlace */
+  left: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+  min-width: 160px;
+}
+
+.submenu li {
+  list-style: none;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.submenu li a:hover {
+  background-color: none;
+  color: #fff;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+
+
+
+
+/* Estilo para el enlace "Productos" */
+#products-link {
+  color: #333; /* Color de texto */
+  /*font-weight: bold;
+  text-transform: uppercase;*/
+  cursor: pointer;
+}
+#home-link {
+  color: #333; /* Color de texto */
+  /*font-weight: bold;
+  text-transform: uppercase;*/
+  cursor: pointer;
+}
+#concre {
+  color: #ff3d00; /* Cambia el color del texto a naranja */
+  font-weight: bold; /* Hace el texto en negrita */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+
+
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #ff3d00;
+}
+
+.btn-cotizacion {
+  background-color: #ff3d00;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Hero principal */
+.hero {
+  background: url('https://concretolisto.com/wp-content/uploads/2024/03/fondo-inicio.webp') no-repeat center center/cover;
+  color: white;
+  text-align: left;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-texto {
+  max-width: 600px;
+}
+
+.hero-texto p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-texto h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.btn-asesoria {
+  background-color: #ff3d00;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-asesoria:hover {
+  background-color: #28a745; /* verde */
+  transform: scale(1.05); /* efecto de crecimiento leve */
+  cursor: pointer;
+}
+.boton-cta {
+  background-color: #ff3c00;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-cta:hover {
+  background-color: #28a745; /* verde */
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
+
+/* Hero dos columnas */
+.hero-dos-columnas {
+  background: url('https://concretolisto.com/wp-content/uploads/2024/03/fondo-inicio.webp') no-repeat center center / cover;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.contenido-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.texto-hero {
+  flex: 1;
+  min-width: 300px;
+}
+
+.texto-hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.texto-hero h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.boton-cta {
+  background-color: #ff3c00;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.imagen-hero {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.imagen-hero img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+/* WhatsApp flotante */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px; /* igual ancho y alto */
+  height: 60px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%; /* hace el círculo */
+  font-size: 1.5rem;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.beneficios {
+  background-color: #fff;
+  margin: -50px auto 0 auto;  /* <-- ¡Ajustá este valor para moverlo más o menos! */
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.beneficio {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.beneficio img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.beneficio h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.beneficio p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.conoce-nosotros {
+  padding: 5rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.contenedor-conoce {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center; /* Mantiene la alineación vertical */
+}
+
+.texto-conoce {
+  flex: 1;
+  min-width: 400px;
+}
+
+.texto-conoce h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+  font-weight: bold;
+}
+
+.texto-conoce p {
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.texto-conoce h3 {
+  font-size: 1.1rem;
+  color: #000;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.valores-conoce {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem 2rem;
+}
+
+.valores-conoce li {
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.valores-conoce i {
+  color: #ff3d00;
+  font-size: 1.1rem;
+}
+
+.boton-ver-mas {
+  background-color: #ff3d00;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.boton-ver-mas:hover {
+  background-color: #d32f2f;
+  transform: scale(1.03);
+}
+
+.imagen-conoce {
+  flex: 1;
+  min-width: 300px; /* Reducir el ancho mínimo para más flexibilidad */
+  text-align: center;
+}
+
+.imagen-conoce img {
+  max-width: 100%;
+  max-height: 400px; /* Establecer una altura máxima para la imagen */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Recorta la imagen si excede la altura máxima manteniendo la proporción */
+}
+
+.ventajas-producto {
+  background-color: #000;
+  color: white;
+  padding: 6rem 2rem; /* Aumenté el padding superior e inferior para dar espacio */
+}
+
+.contenedor-ventajas {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Esto es clave para la alineación vertical al centro */
+  gap: 3rem;
+}
+
+.imagen-ventajas {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  margin-top: -190px;
+  /* Eliminé el margin-bottom que habíamos agregado antes */
+}
+
+.imagen-ventajas img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  /* Puedes ajustar la altura máxima si la imagen es demasiado grande */
+  /* max-height: 450px;  */
+  object-fit: contain; /* Asegura que la imagen completa se vea dentro de su contenedor */
+}
+
+.texto-ventajas {
+  flex: 1;
+  min-width: 400px;
+}
+
+.texto-ventajas h3 {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 0.8rem;
+  font-weight: normal;
+}
+
+.texto-ventajas h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.texto-ventajas p {
+  font-size: 1rem;
+  color: #eee;
+  margin-bottom: 2rem;
+}
+
+.lista-ventajas {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem 2rem;
+}
+
+.lista-ventajas li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.lista-ventajas i {
+  color: #28a745;
+  font-size: 1rem;
+}
+
+.boton-asesoria-sin-costo {
+  background-color: #ff3d00;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.boton-asesoria-sin-costo:hover {
+  background-color: #d32f2f;
+  transform: scale(1.03);
+}
+
+.estadisticas-proyectos {
+  background-color: #f9f9f9; /* Fondo gris claro */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.contenedor-estadisticas {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto; /* Espacio debajo de los contadores */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contador {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 200px; /* Ancho fijo para los contadores */
+}
+
+.icono {
+  background-color: #ff3d00; /* Fondo naranja para los iconos */
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 0.5rem auto;
+}
+
+.numero {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.texto {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.info-proyectos {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.info-proyectos h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  margin-top: 60px; /* Ajusta este valor para mover el texto hacia abajo */
+}
+
+.boton-asesoria-naranja {
+  background-color: #ff3d00; /* Naranja */
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.boton-asesoria-naranja:hover {
+  background-color: #d32f2f;
+  transform: scale(1.03);
+}
+
+.galeria-proyectos {
+  background-color: #f9f9f9; /* Fondo gris claro */
+  padding: 4rem 2rem;
+  text-align: center;
+  margin-top: -60px;
+}
+
+.galeria-proyectos h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.contenedor-galeria {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.proyecto {
+  border-radius: 10px;
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;*/
+  overflow: hidden; /* Para que los bordes redondeados afecten a la imagen */
+  width: 280px; /* Ancho aproximado de cada proyecto */
+}
+
+.proyecto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.proyecto p {
+  font-size: 0.9rem;
+  color: #666;
+  padding: 1rem;
+  text-align: center;
+  background-color: transparent; /* Fondo transparente para el texto */
+}
+
+.distribuidores-section {
+  background-image: url('https://concretolisto.com/wp-content/uploads/2024/04/banner-ladrillos.webp'); /* Reemplaza con la URL de tu imagen de ladrillos */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.distribuidores-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.distribuidores-info {
+  flex: 1;
+  text-align: left;
+}
+
+.distribuidores-info h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 160px; 
+  margin-left: 80px;
+  position: absolute;
+}
+
+.distribuidores-list {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+}
+
+.puntos-venta.ferreterias {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.puntos-venta {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  left: 280px; /* Ajusta este valor para moverlo hacia la derecha */
+}
+
+.departamentos {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+  margin-top: 250px; /* Ajusta este valor para moverlo hacia abajo */
+}
+
+.ferreterias {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 250px; /* Ancho específico para el cuadro de "Puntos" */
+  height: 540px;
+}
+
+
+.departamentos.ferreterias {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.puntos-venta h3,
+.departamentos h3,
+.ferreterias h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.puntos-venta ul,
+.departamentos ul,
+.ferreterias ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.puntos-venta li,
+.departamentos li,
+.ferreterias li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.puntos-venta li i,
+.departamentos li i,
+.ferreterias li i {
+  margin-right: 0.5rem;
+  color: #ff6f00;
+}
+
+/* Estilos específicos para cada lista */
+.puntos-venta {
+  background-color: rgba(165, 42, 42, 0.8);
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative; /* Para el z-index */
+  z-index: 2; /* Asegura que esté encima de "Departamentos" */
+}
+
+.departamentos {
+  background-color: rgba(218, 165, 32, 0.8);
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative; /* Para el z-index */
+  z-index: 1;
+}
+
+.ferreterias {
+  background-color: rgba(139, 69, 19, 0.8);
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative; /* Para el z-index (aunque no sea necesario aquí) */
+  z-index: 1;
+}
+
+.faq-map-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 1rem;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.faq-section {
+  flex: 1 1 500px;
+  padding: 1rem;
+  background: #f6f6f6;
+  border-radius: 15px;
+}
+
+.faq-section h2 {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.2rem;
+}
+
+.faq-section h3 {
+  font-size: 2rem;
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  background: white;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1rem;
+  background: white;
+  border: none;
+  font-size: 1rem;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #444;
+  border-radius: 15px;
+}
+
+.faq-question:hover {
+  background: #f0f0f0;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0 1.5rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
+  background: white;
+}
+
+.faq-answer ul {
+  list-style: disc;
+  padding-left: 1.2rem;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+  color: #d40000;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .icon {
+  transform: rotate(180deg);
+}
+
+.map-container {
+  flex: 1 1 400px;
+  height: 500px;
+  background-color: #ff3c00;
+  border-radius: 20px;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+.map-container iframe {
+  width: 100%; /* Para que ocupe todo el ancho del contenedor */
+  height: 380px; /* Aumenta este valor para hacerlo más alto */
+  border: 0;
+}
+.map-text {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 40px 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-box {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.red-box {
+  background-color: #ff3300;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.footer-icon {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  margin: 10px 0;
+  font-size: 16px;
+  color: white;
+}
+
+.footer-button {
+  background-color: white;
+  color: #ff3300;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.footer-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-box hr {
+  border: 1px solid #ff3300;
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.footer-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.footer-phone {
+  color: #ff3300;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.footer-legal p {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* para ocupar todo el ancho disponible */
+  margin-top: 20px;
+}
+
+.footer-icons img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.red-box {
+  margin-top: -70px; /* Ajustá el valor a gusto */
+}
+
+
+
+
+
+
+
+
+
+
+
+.productos-section {
+  background: url('https://concretolisto.com/wp-content/uploads/2024/03/Group-43.webp') no-repeat center center/cover;
+  padding: 5rem 2rem;
+  color: white;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productos-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.productos-texto {
+  flex: 1;
+  text-align: left;
+}
+
+.productos-texto h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.flecha-abajo {
+  font-size: 2rem;
+  color: #ff3300;
+  animation: bounce 2s infinite;
+}
+
+.productos-imagen {
+  flex: 1;
+  text-align: right;
+}
+
+.productos-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Animación rebote para la flecha */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);  
+  }
+  40% {
+    transform: translateY(8px);  
+  }
+  60% {
+    transform: translateY(4px);  
+  }
+}
+
+.productos-detalle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8rem;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.producto {
+  text-align: center;
+  width: 300px;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.descripcion h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.descripcion p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.btn-vermas {
+  display: inline-block;
+  background-color: #ff3300;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-vermas:hover {
+  background-color: #cc2900;
+}
+
+
+
+
+
+.producto-banner {
+  background: url('https://concretolisto.com/wp-content/uploads/2024/03/Group-44.webp') no-repeat center center;
+  background-size: cover;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contenido-producto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 30px;
+}
+
+.texto-producto {
+  color: #fff;
+  flex: 1 1 50%;
+}
+
+.texto-producto h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.btn-descarga {
+  background-color: #ff3d00;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+  position: relative;
+  top: 200px;
+  left: 800px;
+}
+
+.btn-descarga:hover {
+  background-color: #e63600;
+}
+
+.imagen-producto {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.imagen-producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.ventajas-container {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ventajas-texto {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 400px;
+  flex: 1;
+}
+
+.ventajas-texto h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.ventajas-texto ul {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  list-style-type: disc;
+  margin: 0;
+}
+
+.ventajas-texto li {
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.ventajas-imagen {
+  flex: 1;
+  max-width: 620px;
+}
+
+.ventajas-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.descripcion-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.asesoria-box {
+  background-color: #000;
+  color: white;
+  padding: 65px 30px; /* Aumenta el padding para hacerlo más alto */
+  border-radius: 5px;
+  max-width: 380px; /* Aumenta el ancho máximo */
+  text-align: center;
+  flex: 1 1 380px; /* Opcional: para mayor flexibilidad en tamaño */
+}
+
+
+.icono-sobre {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.texto-asesoria {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.boton-asesoria {
+  display: inline-block;
+  background-color: white;
+  color: #000;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.contenido-descripcion {
+  max-width: 600px;
+}
+
+.contenido-descripcion h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contenido-descripcion h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.contenido-descripcion p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.lista-usuarios {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-usuarios li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #000000; /* Naranja para el ícono ✔ */
+}
+
+.lista-usuarios li::before {
+  content: "✔ ";
+  color: #ff3d00;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+.datos-tecnicos {
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.datos-tecnicos h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.datos-tecnicos p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.accordion-header {
+  background-color: #ddd;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Contenedor oculto por defecto */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  transition: max-height 1s ease;
+  padding: 0 20px;
+}
+
+/* Contenedor visible */
+.accordion-item.open .accordion-content {
+  padding: 15px 20px;
+  max-height: 500px; /* suficientemente grande para el contenido */
+}
+
+.accordion-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.boton-ficha {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.boton-ficha button {
+  background-color: #ff3300;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boton-ficha button:hover {
+  background-color: #e62e00;
+}
+
+
+
+
+.proyectos {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 50px;
+}
+
+.proyectos h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1c1c1c;
+}
+
+.proyectos-grid {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.proyecto-item {
+  max-width: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.proyecto-item img {
+  width: 260px;
+  /*max-width: 520px;*/
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .contenedor-conoce {
+    gap: 2rem;
+  }
+
+  .texto-conoce {
+    min-width: 300px;
+  }
+
+  .valores-conoce {
+    grid-template-columns: 1fr;
+  }
+
+  .imagen-conoce {
+    min-width: 200px; /* Reducir aún más en pantallas más pequeñas */
+  }
+
+  .imagen-conoce img {
+    max-height: 300px; /* Reducir la altura máxima en tablets */
+  }
+
+  .contenedor-ventajas {
+    gap: 2rem;
+  }
+
+  .texto-ventajas {
+    min-width: 300px;
+  }
+
+  .lista-ventajas {
+    grid-template-columns: 1fr;
+  }
+
+  .imagen-ventajas {
+    min-width: 250px;
+  }
+
+  .contenedor-galeria {
+    justify-content: space-around;
+  }
+
+  .proyecto {
+    width: 45%; /* Dos columnas en pantallas medianas */
+  }
+
+  .distribuidores-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .distribuidores-list {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .distribuidores-list > div {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero-texto h1 {
+    font-size: 1.5rem;
+  }
+
+  .contenido-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .imagen-hero img {
+    max-width: 90%;
+  }
+  .contenedor-beneficios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beneficio {
+    max-width: 90%;
+  }
+
+  .contenedor-conoce {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-conoce {
+    text-align: left;
+  }
+
+  .valores-conoce {
+    text-align: left;
+  }
+
+  .imagen-conoce {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .imagen-conoce img {
+    max-height: none; /* Eliminar la altura máxima en pantallas muy pequeñas para que ocupe el ancho */
+    width: 80%; /* Ajustar el ancho en pantallas pequeñas */
+    height: auto;
+  }
+
+  .contenedor-ventajas {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-ventajas {
+    text-align: left;
+  }
+
+  .lista-ventajas {
+    text-align: left;
+  }
+
+  .imagen-ventajas {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+
+  .contenedor-estadisticas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contador {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .contenedor-galeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proyecto {
+    width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+}
